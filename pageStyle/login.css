@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+#logBody {
+					background:url(../img/background.png) repeat-x scroll center top #2c4762;
+					color: #444;
+					font-family: "Helvetica Neue","HelveticaNeue","Helvetica,Arial,sans-serif";
+					font-size: 14px;
+					font-style: normal;
+					font-weight: lighter;
+					line-height: 1.4;
+					border: 0 none;
+					font: inherit;
+					margin: 0;
+					padding: 0;
+					vertical-align: baseline;
+				}
+				
+				#fullscreen_bg {
+					background-position: 100% 50%;
+					background-size:cover;
+					bottom: 0;
+					left: 0;
+					position: fixed;
+					right: 0;
+					top: 0;
+					}
+				
+				#fullscreen_bg:after {
+					background:url(../img/vignetter.png) repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    				bottom: 0;
+				    content: "";
+				    left: 0;
+				    opacity: 0.6;
+				    position: fixed;
+				    right: 0;
+				    top: 0;
+					
+					}
+					
+				#formlog {
+					padding: 20px 30px 30px;
+					margin: 100px auto ;
+					position: relative;
+					top: 50%;
+					width: 400px;
+					z-index: 5;
+					}
+					
+				#form-head {
+					margin-bottom: 14px;
+					}
+					
+				#logo_anchor {
+					pointer-events: none;
+					background-image:url(../img/logo1.png);
+					background-repeat: no-repeat;
+   				    display: block;
+    				height: 100%;
+    				overflow: hidden;
+    				text-indent: -999em;
+					}
+				
+				#logo {
+					margin: auto;
+					height: 70px;
+					width: 250px;
+					overflow: hidden;
+					}
+					
+				#footer {
+						background-color: rgba(0, 0, 0, 0);
+						bottom: 0;
+						left: 0;
+						position: fixed;
+						right: 0;
+						text-rendering: optimizelegibility;
+						top: auto;
+					}
+					
+				#footerinner {
+					height: 120px;
+					}
+
+				#footerlink {
+					left: 0;
+					bottom: 0;
+   				    position: absolute;
+					color: #fff;
+    				opacity: 1;
+					padding: 0 20px 50px 20px;					
+					}
+				.btn {
+					border-radius:3px;
+					}
+				.form-control {
+					border-radius:3px;
+					}
+				.login-form {
+					border-radius:3px;
+
+					}
+				#alertMessage {
+					background-color:#FFFFFF;
+					margin:10px auto;
+					opacity:0.9;
+					border-radius:3px;
+					color:#FF7F27;
+					}
+

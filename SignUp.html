@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+        <title>MyBlog SignUP</title>
+        <!--Loading Bootstrap-->
+        <link href="UI/Flat-UI/Flat-UI-master/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+        
+        <!--Loading Flat UI -->
+        <link href="UI/Flat-UI/Flat-UI-master/dist/css/flat-ui.css" rel="stylesheet">
+        <!--this page style-->
+        <link href="pageStyle/signUp.css" rel="stylesheet">
+   	</head>
+    <body class="input-group-btn" id="logBody">
+    	<div id="fullscreen_bg" style="background-image:url(img/tumblr_ncp65k2tdT1qcnebgo1_1280.jpg)">	
+        </div> 
+        <div id="formlog">
+        	<div id="form-head">
+            	<h1 id="logo">
+                	<a id="logo_anchor" href="/">Myblog</a>
+                </h1>
+                <h2 id="subheading">
+                	Follow the blogs you've been hearing about.
+                	<br>Share the things you love.
+                </h2>
+            </div>
+            <div class="login-form">
+            <form action="/MyBlog/servlet/SignAndLoginServlet" method="post">
+            	<input name="method" type="hidden" value="signUp"/>
+            	<input name="email" id="login-email" class="form-control login-field" type="text" placeholder="Email" value="">
+                <input name="pwd" id="login-pwd" class="form-control login-field" type="password" placeholder="Password" value="">
+                <input id="login-pwd1" class="form-control login-field" type="text"  value="" style="display:none">
+                <label id="eye" class="login-field-icon fui-eye" for="login-pass"></label>
+                <input name="name" id="login-umame" class="form-control login-field" type="text" placeholder="UserName" value="">
+				<input type="submit" id="signup" class="btn btn-primary btn-lg btn-block" value="Sign Up"/>
+			</form>	
+            <div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+        	<div id="footerinner">
+            	<div id="footerlink">
+                	<a class="btn btn-primary btn-lg btn-block" href="Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+        <div id="alertMessage">
+        </div>
+    
+    <!-- jQuery-->
+    <script src="UI/Flat-UI/Flat-UI-master/dist/js/vendor/jquery.min.js"></script>
+    <!-- include individual files as needes-->
+    <script src="UI/Flat-UI/Flat-UI-master/dist/js/flat-ui.min.js"></script>
+    <!-- about this page .js--> 
+    <script src="pageScript/signUp.js"></script>
+	
+</body>
+</html>

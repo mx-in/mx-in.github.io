@@ -1,1 +1,65 @@
-Hello World
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+        <title>MyBlog | Login</title>
+        <!--Loading Bootstrap-->
+        <link href="UI/Flat-UI/Flat-UI-master/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+        
+        <!--Loading Flat UI -->
+        <link href="UI/Flat-UI/Flat-UI-master/dist/css/flat-ui.css" rel="stylesheet">
+        <!--Loading login style-->
+        <link href="pageStyle/login.css" type="text/css" rel="stylesheet">
+   	</head>
+    <body id="logBody">
+    	<div id="fullscreen_bg" style="background-image:url(img/bgimg.jpg)">	
+        </div> 
+        <div id="formlog">
+        	<div id="form-head">
+            	<h1 id="logo">
+                	<a id="logo_anchor" href="/">Myblog</a>
+                </h1>
+            </div>
+            <div class="login-form">
+            <form>
+            	<div class="form-group">
+            		<input name="email" id="login-name" class="form-control login-field" type="text" placeholder="Enter your name" value="">
+					<label class="login-field-icon fui-user" for="login-name"></label>
+            	</div>
+                <div class="form-group" >
+					<input name="pwd" id="login-pass" class="form-control login-field" type="password" placeholder="Password" value="">
+					<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+				<input type="submit" id="login" class="btn btn-primary btn-lg btn-block" value="Log in"/>
+                <label for="checkbox1" id="pendhere" class="checkbox" >
+                	<input type="checkbox" data-toggle="checkbox" id="checkbox1" value="RemberMe" class="custom-checkbox">
+                  		<span class="icons">
+                        	<span class="icon-unchecked"></span>
+                  			<span class="icon-checked"></span>
+                        </span>
+                  Remerber Me
+                </label>
+
+			</form>	
+                <a class="login-link" href="#">Lost your password?</a>
+            </div>
+        </div>
+        <div id="footer">
+        	<div id="footerinner">
+            	<div id="footerlink">
+                	<a class="btn btn-primary btn-lg btn-block" href="SignUp.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+      <div id="alertMessage">
+      </div>
+    
+    <!-- jQuery-->
+    <script src="UI/Flat-UI/Flat-UI-master/dist/js/vendor/jquery.min.js"></script>
+    <!-- include individual files as needes-->
+    <script src="UI/Flat-UI/Flat-UI-master/dist/js/flat-ui.min.js"></script>
+    <!-- about this page .js-->
+	<script src="pageScript/login.js"></script>
+	
+    </body>
+</html>
